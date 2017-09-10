@@ -14,11 +14,17 @@ Responsive image mapping interface for Angular.
 
 ## Example of Usage ##
 `<img-map`
+
 `#imgMap`
+
 `src="YOUR_IMAGE_URL"`
+
 `[markers]="HOTSPOT_ARRAY"`
- ` [titles]="TITLES_ARRAY"`
- `[pixelMarker]=true>`
+
+` [titles]="TITLES_ARRAY"`
+
+`[pixelMarker]=true>`
+
 `</img-map>`
 
 **HOTSPOT_ARRAY** should be in type of `markersArr: number[x][y]`
