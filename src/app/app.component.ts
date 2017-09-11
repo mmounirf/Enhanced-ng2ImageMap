@@ -18,6 +18,7 @@ export class AppComponent {
   hotspots;
   markersTitles: string[] = [];
   markersPositions: number[][] = [];
+  markersUrls: string[] = ['#', '#', '#'];
 
   @ViewChild('imgMap')
   imgMap: ImgMapComponent;
@@ -30,6 +31,7 @@ export class AppComponent {
       this.hotspots.forEach(hotspot => {
         this.markersPositions.push([parseInt(hotspot.coords.slice(0, 3)), parseInt(hotspot.coords.slice(4, 7))]);
         this.markersTitles.push(hotspot.title);
+
       });
       this.imgMap.draw();
     },
